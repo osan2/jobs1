@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page with Image Cards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f3f4f6;
+      font-family: Arial, sans-serif;
+      background-image: url('./assets/images/footer-dec.png');
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      border-radius: 8px;
+      text-align: center;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      text-decoration: none;
+      /* لجعل الرابط بدون خط */
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h1 {
+      margin: 5px 0;
+    }
+
+    #hw {
+      background: #eef202;
+      color: black;
+      font-size: 17px;
+      border-radius: 10px;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    #hz {
+      background: #ffffff;
+      color: black;
+      font-size: 17px;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <a href="https://us.jora.com/job/Snow-Removal-7e792d9ce215238c250890fdac7283be?from_url=https%3A%2F%2Fus.jora.com%2Fj%3Fl%3D%26q%3DSnow%2Bremoval%2B%26sp%3Dhomepage%26trigger_source%3Dhomepage&llm_abstract_present=false&sl=&sol_srt=32eeff24-4d11-4cf3-9b08-a090e4d9e05d&sp=serp&sponsored=false&sq=Snow+removal+&sr=2&tk=vs2n7ywwYYbISCn7d5a1-5_3q1o0tDOJ2CLqIu9GJ&trigger_source=serp" class="card" style="background-image: url('./Champions 2018/3.png');">
+      <h1 id="hw">فرصه عمل لازاله الثلوج</h1>
+      <h1 id="hz"> في الولايات الامريكيه المتحده</h1>
+    </a>
+    <a href="https://www.jobbank.gc.ca/jobsearch/pers/jobposting.xhtml;jsessionid=FE2678368DF9CF61C6997FB79815F55E.jobsearch75"
+      class="card" style="background-image: url('./Champions 2018/1.png');">
+      <h1 id="hw">العمل في كندا 2025</h1>
+      <h1 id="hz">عمل في هاملتون براتب مغري</h1>
+    </a>
+    <a href="https://www.rekrute.com/offre-emploi-acheteur-junior-recrutement-groupe-labelvie---carrefour-casablanca-156128.html" class="card" style="background-image: url('./Champions 2018/8.png');">
+      <h1 id="hw"> كارفور المغربي يطلق حمله  </h1>
+      <h1 id="hz">توظيف في عده مدن مغربيه </h1>
+    </a>
+    <a href="https://international.valenciacollege.edu/scholarships.php" class="card" style="background-image: url('./Champions 2018/7.png');">
+      <h1 id="hw"> فرصه عمل في اسبانيا </h1>
+      <h1 id="hz"> الناطقين باللغه الاسبانيه </h1>
+    </a>
+    <a href="https://visasponsor.jobs/api/jobs/70f7daaca9f74692845e027d1e748e74/Halal-Butcher" class="card"
+      style="background-image: url('./Champions 2018/6.png');">
+      <h1 id="hw">فرصة عمل كجزار لحم حلال </h1>
+      <h1 id="hz"> في المملكة المتحدة مع رعاية التأشيرة
+      </h1>
+    </a>
+    <a href="https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?detail=50076777" class="card" style="background-image: url('./Champions 2018/9.png');">
+      <h1 id="hw">الدراسه في المانيا </h1>
+      <h1 id="hz"> منحه 2025/2024 Epos Daad</h1>
+    </a>
+    <a href="https://hajir.ma/programme-rips-2025-los-angeles/" class="card"
+      style="background-image: url('./Champions 2018/3.png');">
+      <h1 id="hw">Programme RIPS 2025 :</h1>
+      <h1 id="hz">Votre chance d’étudier à Los Angeles</h1>
+    </a>
+    <a href="https://www.newcastle.edu.au/study/research/phd-scholarships" class="card" style="background-image: url('./Champions 2018/4.png');">
+      <h1 id="hw">منحه جامعه Newcastel</h1>
+      <h1 id="hz">في استراليا</h1>
+    </a>
+    <a href="https://sci-italia.it/wordpress/wp-content/uploads/2024/10/Call-for-ESC-Volunteers-Progettazione-social-Youth-Work.pdf" class="card" style="background-image: url('./Champions 2018/5.png');">
+      <h1 id="hw">فرصة تطوع في ايطاليا 2025:</h1>
+      <h1 id="hz">مع إقامة مجانية وتذاكر طيران</h1>
+    </a>
+  </div>
+</body>
+
+</html>
